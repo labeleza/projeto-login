@@ -17,14 +17,16 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Faça login para acessar sua conta</p>
-                <form action="#" method="POST">
+                <form action="#" method="POST" autocomplete="on">
                     <label for="iemail">Email</label>
                     <div id="email">
                         <input 
                         type="email" 
                         name="email" 
                         id="iemail" 
-                        required>
+                        required
+                        autofocus
+                        autocomplete="email">
                     </div>
 
                     <label for="ipass">Password</label>
@@ -33,7 +35,8 @@
                         type="password" 
                         name="pass" 
                         id="ipass" 
-                        required>
+                        required
+                        autocomplete="new-password">
                     </div>
 
                     <div id="login-button">
