@@ -62,7 +62,7 @@ main {
 
 #form p {
     margin-bottom: 1rem;
-    text-decoration: underline #5f2c82;
+    text-decoration: underline #008b87;
 }
 
 #form h1, p {
@@ -91,13 +91,15 @@ main {
 }
 
 #email input:focus, #password input:focus {
-    background-color: #5f2c82;
+    background-color: #0005;
+    outline: 1px solid #fff;
 }
 
 #login-button button {
     border: none;
     border-radius: .2rem;
     cursor: pointer;
+    color: #008b87;
     font: bold normal .9rem Arial, sans-serif;
     text-transform: uppercase;
     height: 2rem;
@@ -108,5 +110,10 @@ main {
 }
 
 #login-button button:hover {
-    background-color: #5f2c82;
+    background-color: #000a;
+    color: #fff;
+}
+
+#login-button button:focus {
+    border: 2px solid #000a;
 }
