@@ -51,18 +51,17 @@ main {
 
 #form {
     padding: 1rem 0;
-    height: 300px;
-    position: relative;
 }
 
 #form h1 {
     text-transform: uppercase;
-    text-shadow: 0px 0px 5px #000a;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
 #form p {
     margin-bottom: 1rem;
     text-decoration: underline #008b87;
+    text-decoration-thickness: 2px;
 }
 
 #form h1, p {
@@ -95,26 +94,25 @@ main {
     outline: 1px solid #fff;
 }
 
-#login-button button {
+#login-button {
     border: none;
     border-radius: .2rem;
     cursor: pointer;
     color: #008b87;
     font: bold normal .9rem Arial, sans-serif;
+    margin: 0 1rem;
     text-transform: uppercase;
     height: 2rem;
     width: 5rem;
     transition: all 0.2s ease-in-out;
-    position: absolute;
-    bottom: 1.5rem;
 }
 
-#login-button button:hover {
+#login-button:hover {
     background-color: #000a;
     color: #fff;
 }
 
-#login-button button:focus {
+#login-button:focus {
     border: 2px solid #000a;
 }
 

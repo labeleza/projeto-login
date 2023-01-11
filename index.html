@@ -7,6 +7,7 @@
     <title>Tela de Login</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-querys.css">
 </head>
 <body>
     <main>
@@ -25,7 +26,6 @@
                         name="email" 
                         id="iemail" 
                         required
-                        autofocus
                         autocomplete="email">
                     </div>
 
@@ -39,9 +39,9 @@
                         autocomplete="new-password">
                     </div>
 
-                    <div id="login-button">
-                        <button type="submit">Login</button>
-                    </div>
+                    <button
+                    id="login-button"
+                    type="submit">Login</button>
                 </form>
             </div>
         </section>

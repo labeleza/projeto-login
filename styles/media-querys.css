@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* 
+    Telas pequenas: Até 600px
+    Celular: 600px - 768px
+    Tablet: 768px - 992px
+    PC: 992px - 1200px
+    Telas grandes: 1200px +
+*/
+
+/* Version for Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #login {
+        flex-direction: row;
+        align-items: center;
+        min-height: 80vh;
+        width: 80vw;
+    }
+
+    #login > #img {
+        width: 55vw;
+        min-height: 90vh;
+    }
+
+    #login > #form {
+        min-height: 52vh;
+    }
+
+    #login > #form > p, label {
+        font-size: 1.1rem;
+    }
+
+    #form > h1 {
+        font-size: 2.5rem;
+    }
+
+}
