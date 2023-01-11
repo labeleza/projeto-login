@@ -30,7 +30,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #login {
@@ -116,4 +116,10 @@ main {
 
 #login-button button:focus {
     border: 2px solid #000a;
+}
+
+@media screen and (orientation: landscape) {
+    main {
+        padding: 1rem 0;
+    }
 }
