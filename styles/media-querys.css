@@ -10,20 +10,25 @@
 
 /* Version for Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body, main {
+        background: linear-gradient(to top, #5f2c82, #49a09d) no-repeat fixed;
+    }
+
     #login {
         flex-direction: row;
         align-items: center;
-        min-height: 80vh;
         width: 80vw;
     }
 
     #login > #img {
-        width: 55vw;
-        min-height: 90vh;
+        width: 50vw;
+        height: 80vh;
     }
 
     #login > #form {
-        min-height: 52vh;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
     }
 
     #login > #form > p, label {
@@ -34,4 +39,34 @@
         font-size: 2.5rem;
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    body, main {
+        background: linear-gradient(to top, #5f2c82, #49a09d) no-repeat fixed;
+    }
+
+    #login {
+        width: 992px;
+        flex-direction: row;
+
+    }
+
+    #login > #img {
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    #login > #form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #form > h1 {
+        font-size: 2.5rem;
+    }
+
+    #form > p, label {
+        font-size: 1.1rem;
+    }
 }

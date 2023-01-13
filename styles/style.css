@@ -41,6 +41,7 @@ main {
     flex-direction: column;
     max-width: 768px;
     overflow: hidden;
+    transition: width .3s ease-in-out, height .3s ease;
 }
 
 #login > #img {
