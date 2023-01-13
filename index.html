@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-querys.css">
 </head>
@@ -19,29 +20,43 @@
                 <h1>LogIn</h1>
                 <p>Entre para acessar sua conta</p>
                 <form action="#" method="POST" autocomplete="on">
-                    <label for="iemail">Email</label>
                     <div id="email">
+                        <span class="material-icons">alternate_email</span>
                         <input 
                         type="email" 
                         name="email" 
                         id="iemail" 
                         required
-                        autocomplete="email">
+                        autocomplete="email"
+                        placeholder="Seu email">
+                        <label for="iemail">Email</label>
                     </div>
 
-                    <label for="ipass">Password</label>
                     <div id="password">
+                        <span class="material-icons">lock</span>
                         <input 
                         type="password" 
                         name="pass" 
-                        id="ipass" 
+                        id="ipass"
+                        minlength="8"
+                        maxlength="30" 
                         required
-                        autocomplete="new-password">
+                        autocomplete="new-password"
+                        placeholder="Sua senha">
+                        <label for="ipass">Password</label>
                     </div>
-
-                    <button
-                    id="login-button"
-                    type="submit">Login</button>
+                    
+                    <div id="buttons">
+                        <button
+                        id="login-button"
+                        type="submit">
+                            Login
+                        </button>
+                        <button
+                        id="forgot-password">
+                            <a href="#" target="_blank" rel="noopener noreferrer">forgot password?</a>
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>

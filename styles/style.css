@@ -40,9 +40,8 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 768px;
-
     overflow: hidden;
-    transition: width .3s ease-in-out, height .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #login > #img {
@@ -53,6 +52,27 @@ main {
 
 #form {
     padding: 1rem 0;
+}
+
+#form span {
+    border-radius: 0 .2rem .2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #008b87;
+    width: 3rem;
+    height: 2.05rem;
+    right: 1rem;
+}
+
+#email, #password {
+    position: relative;
+}
+
+#form label {
+    display: none;
 }
 
 #form h1 {
@@ -70,10 +90,14 @@ main {
     text-align: center;
 }
 
+#form p {
+    margin-top: -1rem;
+}
+
 #form, form {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     width: 100%;
 }
 
@@ -87,13 +111,18 @@ main {
     caret-color: #49a09d;
     padding: .5rem;
     width: 100%;
-    text-indent: .1rem;
     transition: all 0.2s ease-in-out;
 }
 
 #email input:focus, #password input:focus {
     background-color: #0005;
+    color: #fff;
     outline: 1px solid #fff;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 #login-button {
@@ -116,6 +145,22 @@ main {
 
 #login-button:focus {
     border: 2px solid #000a;
+}
+
+#forgot-password {
+    background: none;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forgot-password a:visited {
+    color: #fff;
+}
+
+#forgot-password a:hover {
+    color: rgba(0, 0, 0, 0.555);
 }
 
 @media screen and (orientation: landscape) {
