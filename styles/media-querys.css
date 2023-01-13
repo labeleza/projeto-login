@@ -18,6 +18,7 @@
         flex-direction: row;
         align-items: center;
         width: 80vw;
+        height: 70vh;
     }
 
     #login > #img {
@@ -49,6 +50,7 @@
     #login {
         min-width: 990px;
         flex-direction: row;
+        height: 70vh;
 
     }
 
